@@ -93,35 +93,40 @@ export default function Home() {
   return (
     <>
       {/*hero*/}
-      <div className=" relative bg-gradient-to-br from-[#2ECC71] to-[#27AE60] text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32 ">
+      <div className="relative bg-white text-gray-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
           <div className="text-center">
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl mb-6">
-              KLOKA SIFFROR AB
-            </h1>
-            <p className="text-xl sm:text-2xl mb-12 text-white/90 max-w-3xl mx-auto">
-              Följ med oss och upplev den klarhet som kommer med att förstå dina
-              siffror!
-            </p>
+            {/* LOGO */}
+            <div className="flex justify-center mb-8 sm:mb-10">
+              <img
+                src="klokasiffror-logo.png"
+                alt="Kloka Siffror"
+                className="w-full max-w-[720px] h-auto"
+              />
+            </div>
+
             <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
               <div className="flex items-center gap-3">
-                <Calculator className="w-8 h-8" />
+                <Calculator className="w-8 h-8 text-[#2ECC71]" />
                 <span className="text-lg">Redovisning</span>
               </div>
+
               <div className="flex items-center gap-3">
-                <Headset className="w-8 h-8" />
+                <Headset className="w-8 h-8 text-[#2ECC71]" />
                 <span className="text-lg">Virtuel Assistent</span>
               </div>
+
               <div className="flex items-center gap-3">
-                <Briefcase className="w-8 h-8" />
+                <Briefcase className="w-8 h-8 text-[#2ECC71]" />
                 <span className="text-lg">Konsultation</span>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       {/*services*/}
-      <div className="py-24 bg-gray-50">
+      <div className="py-24 bg-gradient-to-b from-[#2ECC71] via-white to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl mb-4 text-gray-900">
