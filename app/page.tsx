@@ -93,32 +93,37 @@ export default function Home() {
   return (
     <>
       {/*hero*/}
-      <div className="relative bg-white text-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
+      {/* LOGO */}
+
+      <div className="bg-gradient-to-br from-[#25a55b] to-[#2ECC71] text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
           <div className="text-center">
-            {/* LOGO */}
             <div className="flex justify-center mb-8 sm:mb-10">
               <img
-                src="klokasiffror-logo.png"
+                src="klokasiffror-logo-mark.png"
                 alt="Kloka Siffror"
-                className="w-full max-w-[720px] h-auto"
+                className="w-full max-w-[200px] h-auto"
               />
             </div>
-
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl mb-6">
+              Professional Business Solutions
+            </h1>
+            <p className="text-xl sm:text-2xl mb-12 text-white/90 max-w-3xl mx-auto">
+              Expert accounting, virtual assistant, and consulting services to
+              help your business thrive
+            </p>
             <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
               <div className="flex items-center gap-3">
-                <Calculator className="w-8 h-8 text-[#2ECC71]" />
-                <span className="text-lg">Redovisning</span>
+                <Calculator className="w-8 h-8" />
+                <span className="text-lg">Accounting</span>
               </div>
-
               <div className="flex items-center gap-3">
-                <Headset className="w-8 h-8 text-[#2ECC71]" />
-                <span className="text-lg">Virtuel Assistent</span>
+                <Headset className="w-8 h-8" />
+                <span className="text-lg">Virtual Assistant</span>
               </div>
-
               <div className="flex items-center gap-3">
-                <Briefcase className="w-8 h-8 text-[#2ECC71]" />
-                <span className="text-lg">Konsultation</span>
+                <Briefcase className="w-8 h-8" />
+                <span className="text-lg">Consulting</span>
               </div>
             </div>
           </div>
@@ -126,7 +131,7 @@ export default function Home() {
       </div>
 
       {/*services*/}
-      <div className="py-24 bg-gradient-to-b from-[#2ECC71] via-white to-white">
+      <div className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl mb-4 text-gray-900">
