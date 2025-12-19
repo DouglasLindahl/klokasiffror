@@ -14,34 +14,45 @@ import {
   Users,
   TrendingUp,
   Shield,
+  MessageCircle,
 } from "lucide-react";
 
 const services = [
   {
     icon: Calculator,
-    title: "Boköring & Löner",
+    title: "Bokföring & Löner",
     description:
-      "Vi erbjuder professionell hjälp med löpande bokföring och momsdeklarationer.",
-    features: ["Löpande bokföring", "Momsdeklaratione", "Rredovisning"],
+      "Vi tar hand om den löpande bokföringen, momsrapporteringen och lönehanteringen – digitalt, effektivt och korrekt.",
+    features: [
+      "Löpande bokföring",
+      "Moms- och arbetsgivardeklarationer",
+      "Lönehantering",
+      "Digital kvitto- och fakturahantering",
+    ],
     color: "from-[#2ECC71] to-[#27AE60]",
   },
   {
     icon: Headset,
     title: "Bokslut & Deklaration",
     description:
-      "Har du koll på den löpande bokföringen men behöver stöd med årsredovisningen?",
+      "När året ska sammanställas hjälper vi till med bokslut, årsredovisning och inkomstdeklaration. Du får full kontroll och tydlighet – utan krångel. ",
     features: [
-      "löpande bokföringen",
-      "årsredovisningen",
-      "Inkomstdeklarationen",
+      "Bokslut och årsredovisning",
+      "Inkomstdeklarationer",
+      "Rådgivning inför nytt räkenskapsår ",
     ],
     color: "from-[#27AE60] to-[#229954]",
   },
   {
     icon: Briefcase,
-    title: "Rapporter & Rådgivning",
-    description: "Behöver du rådgivning inför en eventuell investering?",
-    features: ["rådgivning", "eventuell investering", "företagets ekonomi"],
+    title: "Rapporter & Rådgivning ",
+    description:
+      "Vi gör siffrorna begripliga och användbara. Med rätt analys och rådgivning får du bättre beslutsunderlag – och mer lönsamhet. ",
+    features: [
+      "Ekonomisk analys",
+      "Likviditets- och resultatrapportering ",
+      "Tillväxt- och investeringsplanering",
+    ],
     color: "from-[#229954] to-[#1E8449]",
   },
 ];
@@ -65,27 +76,27 @@ const cities = [
 const reasons = [
   {
     icon: Award,
-    title: "Proven Expertise",
+    title: "Dokumenterad expertis",
     description:
-      "Over 15 years of experience delivering exceptional results for businesses of all sizes.",
+      "Över 10 års erfarenhet av att hjälpa små och medelstora företag att växa med trygga och beprövade lösningar.",
   },
   {
     icon: Users,
-    title: "Dedicated Team",
+    title: "Personligt & småföretagarvänligt",
     description:
-      "Certified professionals committed to understanding and achieving your business goals.",
+      "Du får en nära samarbetspartner som förstår din vardag, dina utmaningar och dina mål – inga opersonliga standardlösningar.",
   },
   {
     icon: TrendingUp,
-    title: "Results-Driven",
+    title: "Flexibla tjänster & tydliga priser",
     description:
-      "We focus on measurable outcomes that directly impact your bottom line and growth.",
+      "Anpassade upplägg med fasta priser så att du alltid vet vad du betalar för och vilken nytta du får.",
   },
   {
-    icon: Shield,
-    title: "Trust & Security",
+    icon: MessageCircle,
+    title: "Digitalt smart – mänskligt nära",
     description:
-      "Your data and financial information are protected with industry-leading security measures.",
+      "Moderna digitala lösningar kombinerat med personlig kontakt och snabb återkoppling när du behöver det.",
   },
 ];
 
@@ -106,24 +117,28 @@ export default function Home() {
               />
             </div>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl mb-6">
-              Professional Business Solutions
+              Redovisning som gör skillnad.
             </h1>
             <p className="text-xl sm:text-2xl mb-12 text-white/90 max-w-3xl mx-auto">
-              Expert accounting, virtual assistant, and consulting services to
-              help your business thrive
+              Vi hjälper små och medelstora företag med redovisning, rådgivning
+              och digitala lösningar som frigör tid och skapar trygghet.
             </p>
             <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
               <div className="flex items-center gap-3">
                 <Calculator className="w-8 h-8" />
-                <span className="text-lg">Accounting</span>
+                <span className="text-lg">Redovisning</span>
               </div>
               <div className="flex items-center gap-3">
                 <Headset className="w-8 h-8" />
-                <span className="text-lg">Virtual Assistant</span>
+                <span className="text-lg">Mentorship </span>
               </div>
               <div className="flex items-center gap-3">
                 <Briefcase className="w-8 h-8" />
-                <span className="text-lg">Consulting</span>
+                <span className="text-lg">Virtuell Assistent</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <Briefcase className="w-8 h-8" />
+                <span className="text-lg">Rådgivning </span>
               </div>
             </div>
           </div>
@@ -138,8 +153,8 @@ export default function Home() {
               Våra tjänster
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Expertis som leder till framgång – oavsett om det gäller att
-              starta, investera eller växa
+              Vi tar hand om den löpande bokföringen, momsrapporteringen och
+              lönehanteringen – digitalt, effektivt och korrekt.
             </p>
           </div>
 
@@ -220,21 +235,23 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
               <div>
                 <div className="text-4xl sm:text-5xl text-[#2ECC71] mb-2">
-                  500+
+                  100+
                 </div>
-                <div className="text-gray-600">Happy Clients</div>
+                <div className="text-gray-600">Nöjda kunder</div>
               </div>
+
               <div>
                 <div className="text-4xl sm:text-5xl text-[#2ECC71] mb-2">
-                  15+
+                  10+
                 </div>
-                <div className="text-gray-600">Years Experience</div>
+                <div className="text-gray-600">Års erfarenhet</div>
               </div>
+
               <div>
                 <div className="text-4xl sm:text-5xl text-[#2ECC71] mb-2">
                   98%
                 </div>
-                <div className="text-gray-600">Client Satisfaction</div>
+                <div className="text-gray-600">Kundnöjdhet</div>
               </div>
             </div>
           </div>
@@ -302,15 +319,15 @@ export default function Home() {
 
           <div className="bg-gradient-to-br from-[#2ECC71] to-[#27AE60] rounded-2xl p-8 sm:p-12 text-white text-center">
             <Clock className="w-12 h-12 mx-auto mb-4" />
-            <h3 className="text-2xl sm:text-3xl mb-4">Oppettider</h3>
+            <h3 className="text-2xl sm:text-3xl mb-4">Öppettider</h3>
             <div className="space-y-2 text-lg">
-              <p>mandag - Fredag: 8:00 - 18:00</p>
-              <p>Sondag: 9:00 - 14:00</p>
-              <p>Sondag: Stangt</p>
+              <p>Måndag – Fredag: 08:00 – 18:00</p>
+              <p>Lördag: 09:00 – 14:00</p>
+              <p>Söndag: Stängt</p>
             </div>
             <div className="mt-8">
               <a
-                href="mailto:info@businesssolutions.com"
+                href="mailto:info@klokasiffror.com"
                 className="inline-block bg-white text-[#2ECC71] px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors"
               >
                 Boka en konsultation
