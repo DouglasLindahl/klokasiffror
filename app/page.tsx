@@ -29,7 +29,7 @@ const services = [
       "Lönehantering",
       "Digital kvitto- och fakturahantering",
     ],
-    color: "from-[#2ECC71] to-[#27AE60]",
+    color: "from-[#007533] to-[#27AE60]",
   },
   {
     icon: Headset,
@@ -41,7 +41,7 @@ const services = [
       "Inkomstdeklarationer",
       "Rådgivning inför nytt räkenskapsår ",
     ],
-    color: "from-[#27AE60] to-[#229954]",
+    color: "from-[#007533] to-[#229954]",
   },
   {
     icon: Briefcase,
@@ -53,7 +53,7 @@ const services = [
       "Likviditets- och resultatrapportering ",
       "Tillväxt- och investeringsplanering",
     ],
-    color: "from-[#229954] to-[#1E8449]",
+    color: "from-[#007533] to-[#1E8449]",
   },
 ];
 
@@ -63,14 +63,16 @@ const cities = [
     address: "Stenhuggaregatan 1B",
     city: "456 32 Kungshamn",
     phone: "(212) 555-0100",
-    email: "hello@klokasiffror.com",
+    email: "scott@klokasiffror.se",
+    img: "scott_img.jpg",
   },
   {
     name: "ÖREBRO",
     address: "Ekoxevägen 12",
     city: "702 30 Örebro",
     phone: "(213) 555-0200",
-    email: "hello@klokasiffror.com",
+    email: "per@klokasiffror.se",
+    img: "per_img.jpg",
   },
 ];
 const reasons = [
@@ -78,7 +80,7 @@ const reasons = [
     icon: Award,
     title: "Dokumenterad expertis",
     description:
-      "Över 10 års erfarenhet av att hjälpa små och medelstora företag att växa med trygga och beprövade lösningar.",
+      "Över 15 års erfarenhet av att hjälpa små och medelstora företag att växa med trygga och beprövade lösningar.",
   },
   {
     icon: Users,
@@ -106,12 +108,12 @@ export default function Home() {
       {/*hero*/}
       {/* LOGO */}
 
-      <div className="bg-gradient-to-br from-[#25a55b] to-[#2ECC71] text-white">
+      <div className="bg-gradient-to-br from-[#007533] to-[#007533] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
           <div className="text-center">
             <div className="flex justify-center mb-8 sm:mb-10">
               <img
-                src="klokasiffror-logo-mark.png"
+                src="logo.png"
                 alt="Kloka Siffror"
                 className="w-full max-w-[200px] h-auto"
               />
@@ -221,7 +223,7 @@ export default function Home() {
                   key={index}
                   className="text-center group hover:transform hover:scale-105 transition-all duration-300"
                 >
-                  <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-[#2ECC71] to-[#27AE60] mb-6 group-hover:shadow-lg">
+                  <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-[#007533] to-[#003824] mb-6 group-hover:shadow-lg">
                     <Icon className="w-10 h-10 text-white" />
                   </div>
                   <h3 className="text-xl mb-3 text-gray-900">{reason.title}</h3>
@@ -234,21 +236,21 @@ export default function Home() {
           <div className="bg-gray-50 rounded-2xl p-8 sm:p-12">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
               <div>
-                <div className="text-4xl sm:text-5xl text-[#2ECC71] mb-2">
+                <div className="text-4xl sm:text-5xl text-[#007433] mb-2">
                   100+
                 </div>
                 <div className="text-gray-600">Nöjda kunder</div>
               </div>
 
               <div>
-                <div className="text-4xl sm:text-5xl text-[#2ECC71] mb-2">
-                  10+
+                <div className="text-4xl sm:text-5xl text-[#007433] mb-2">
+                  15+
                 </div>
                 <div className="text-gray-600">Års erfarenhet</div>
               </div>
 
               <div>
-                <div className="text-4xl sm:text-5xl text-[#2ECC71] mb-2">
+                <div className="text-4xl sm:text-5xl text-[#007433] mb-2">
                   98%
                 </div>
                 <div className="text-gray-600">Kundnöjdhet</div>
@@ -270,11 +272,11 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="flex flex-wrap gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             {cities.map((location, index) => (
               <motion.div
                 key={index}
-                className="flex-1 min-w-[260px] bg-gradient-to-br from-gray-50 to-white border-2 border-[#2ECC71]/20 rounded-xl p-6 hover:border-[#2ECC71] transition-colors duration-300"
+                className="flex gap-6 bg-gradient-to-br from-gray-50 to-white border-2 border-[#007533]/20 rounded-xl p-6 hover:border-[#00db33] transition-colors duration-300"
                 initial={{ opacity: 0, y: 40, scale: 0.95 }}
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 viewport={{ once: true, amount: 0.3 }}
@@ -284,54 +286,63 @@ export default function Home() {
                   ease: "easeOut",
                 }}
               >
-                <div className="flex items-center gap-2 mb-4">
-                  <MapPin className="w-6 h-6 text-[#2ECC71]" />
-                  <h3 className="text-xl text-gray-900">{location.name}</h3>
+                {/* LEFT: Text content */}
+                <div className="flex-1">
+                  <div className="flex items-center gap-2 mb-4">
+                    <MapPin className="w-6 h-6 text-[#007533]" />
+                    <h3 className="text-xl text-gray-900">{location.name}</h3>
+                  </div>
+
+                  <div className="space-y-3 text-gray-600">
+                    <p className="text-sm">
+                      {location.address}
+                      <br />
+                      {location.city}
+                    </p>
+
+                    <div className="flex items-center gap-2">
+                      <Phone className="w-4 h-4 text-[#007533]" />
+                      <a
+                        href={`tel:${location.phone}`}
+                        className="text-sm hover:text-[#007533] transition-colors"
+                      >
+                        {location.phone}
+                      </a>
+                    </div>
+
+                    <div className="flex items-center gap-2">
+                      <Mail className="w-4 h-4 text-[#007533]" />
+                      <a
+                        href={`mailto:${location.email}`}
+                        className="text-sm hover:text-[#007533] transition-colors"
+                      >
+                        {location.email}
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                <div className="space-y-3 text-gray-600">
-                  <p className="text-sm">
-                    {location.address}
-                    <br />
-                    {location.city}
-                  </p>
-                  <div className="flex items-center gap-2">
-                    <Phone className="w-4 h-4 text-[#2ECC71]" />
-                    <a
-                      href={`tel:${location.phone}`}
-                      className="text-sm hover:text-[#2ECC71] transition-colors"
-                    >
-                      {location.phone}
-                    </a>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Mail className="w-4 h-4 text-[#2ECC71]" />
-                    <a
-                      href={`mailto:${location.email}`}
-                      className="text-sm hover:text-[#2ECC71] transition-colors"
-                    >
-                      {location.email}
-                    </a>
-                  </div>
+
+                {/* RIGHT: Image */}
+                <div className="block w-20 h-20 sm:w-32 sm:h-32 flex-shrink-0">
+                  <img
+                    src={location.img}
+                    alt={location.name}
+                    className="w-full h-full object-cover rounded-lg"
+                  />
                 </div>
               </motion.div>
             ))}
           </div>
 
-          <div className="bg-gradient-to-br from-[#2ECC71] to-[#27AE60] rounded-2xl p-8 sm:p-12 text-white text-center">
+          <div className="bg-gradient-to-br from-[#007533] to-[#003824] rounded-2xl p-8 sm:p-12 text-white text-center">
             <Clock className="w-12 h-12 mx-auto mb-4" />
             <h3 className="text-2xl sm:text-3xl mb-4">Öppettider</h3>
             <div className="space-y-2 text-lg">
               <p>Måndag – Fredag: 08:00 – 18:00</p>
-              <p>Lördag: 09:00 – 14:00</p>
-              <p>Söndag: Stängt</p>
             </div>
-            <div className="mt-8">
-              <a
-                href="mailto:info@klokasiffror.com"
-                className="inline-block bg-white text-[#2ECC71] px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors"
-              >
-                Boka en konsultation
-              </a>
+            <br />
+            <div className="space-y-2 text-lg">
+              <p>Boka en konsultation via epost</p>
             </div>
           </div>
         </div>
