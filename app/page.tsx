@@ -111,13 +111,6 @@ export default function Home() {
       <div className="bg-gradient-to-br from-[#007533] to-[#007533] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
           <div className="text-center">
-            <div className="flex justify-center mb-8 sm:mb-10">
-              <img
-                src="logo.png"
-                alt="Kloka Siffror"
-                className="w-full max-w-[200px] h-auto"
-              />
-            </div>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl mb-6">
               Redovisning som gör skillnad.
             </h1>
@@ -327,7 +320,7 @@ export default function Home() {
                   <img
                     src={location.img}
                     alt={location.name}
-                    className="w-full h-full object-cover rounded-lg"
+                    className="w-full h-full object-cover object-top rounded-lg"
                   />
                 </div>
               </motion.div>
