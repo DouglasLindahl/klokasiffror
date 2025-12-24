@@ -108,7 +108,12 @@ export default function Home() {
       {/*hero*/}
       {/* 2ECC71 007533 003824 */}
 
-      <div className="bg-gradient-to-b from-[#2ECC71] via-[#007533] to-[#007533] text-white">
+      <div
+        className="bg-gradient-to-br 
+  from-[#007533] from-0% 
+  via-[#007533] via-30% 
+  to-[#2ECC71] to-100% text-white"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
           <div className="text-center">
             <div className="flex justify-center mb-8">
