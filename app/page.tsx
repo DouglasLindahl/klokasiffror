@@ -106,11 +106,19 @@ export default function Home() {
   return (
     <>
       {/*hero*/}
-      {/* LOGO */}
+      {/* 2ECC71 007533 003824 */}
 
-      <div className="bg-gradient-to-br from-[#007533] to-[#007533] text-white">
+      <div className="bg-gradient-to-b from-[#2ECC71] via-[#007533] to-[#007533] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
           <div className="text-center">
+            <div className="flex justify-center mb-8">
+              <img
+                src="klokasiffror-logo.png"
+                alt="Kloka Siffror"
+                className="h-20 sm:h-24 lg:h-42 w-auto opacity-95"
+              />
+            </div>
+
             <h1 className="text-5xl sm:text-6xl lg:text-7xl mb-6">
               Redovisning som gör skillnad.
             </h1>
@@ -139,7 +147,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
       {/*services*/}
       <div className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
