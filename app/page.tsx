@@ -15,6 +15,7 @@ import {
   TrendingUp,
   Shield,
   MessageCircle,
+  Building2,
 } from "lucide-react";
 
 const services = [
@@ -54,6 +55,55 @@ const services = [
       "Tillväxt- och investeringsplanering",
     ],
     color: "from-[#007533] to-[#1E8449]",
+  },
+  {
+    icon: Users,
+    title: "Mentorship för entreprenörer",
+    description:
+      "Att starta och driva företag kan kännas överväldigande – särskilt i början. Därför erbjuder Kloka Siffror mentorskap för entreprenörer och småföretagare som vill ha stöd, bollplank och vägledning i sin företagsresa.",
+    features: [
+      "Affärsstrategi och planering",
+      "Prissättning, budget och ekonomistyrning",
+      "Effektiva rutiner för administration och bokföring",
+      "Råd om marknadsföring och kundrelationer",
+      "Löpande coachning och uppföljning",
+    ],
+    color: "from-[#2ECC71] to-[#27AE60]",
+    extended: true,
+  },
+  {
+    icon: Headset,
+    title: "Virtuell Assistent (VA)",
+    description:
+      "Behöver du hjälp med administration, sociala medier eller kundkommunikation – men vill slippa anställa? Vår Virtuella Assistent är din flexibla resurs på distans.",
+    features: [
+      "Administration & back-office (avtal, fakturor, dokument)",
+      "E-post, kalender och kundkontakt",
+      "Sociala medier – planering, inlägg och publicering",
+      "Kundservice och enklare support",
+      "Webbuppdateringar och enklare e-handelsstöd",
+      "Bokföringsunderlag och kvittohantering",
+    ],
+    color: "from-[#27AE60] to-[#229954]",
+    process: [
+      "Vi kartlägger vad du behöver hjälp med",
+      "Du väljer mellan fast pris och löpande avtal",
+      "Vi startar snabbt – ofta inom några dagar",
+    ],
+  },
+  {
+    icon: Building2,
+    title: "Bostadsrättsföreningar (BRF)",
+    description:
+      "Ekonomisk förvaltning för små och medelstora föreningar – tryggt, enkelt och med fasta priser. Vi hjälper styrelser att få ordning, överblick och trygghet i den ekonomiska förvaltningen.",
+    features: [
+      "Löpande bokföring och avstämningar",
+      "Leverantörs- och fakturahantering",
+      "Budget",
+      "Årsbokslut och årsredovisning (K2/K3)",
+      "Rapporter och presentationer till styrelsen",
+    ],
+    color: "from-[#229954] to-[#1E8449]",
   },
 ];
 
@@ -201,6 +251,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       {/*WhyChooseUs*/}
       <div className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
