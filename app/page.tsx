@@ -116,14 +116,6 @@ export default function Home() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
           <div className="text-center">
-            <div className="flex justify-center mb-8">
-              <img
-                src="klokasiffror-logo.png"
-                alt="Kloka Siffror"
-                className="h-20 sm:h-24 lg:h-42 w-auto opacity-95"
-              />
-            </div>
-
             <h1 className="text-5xl sm:text-6xl lg:text-7xl mb-6">
               Redovisning som gör skillnad.
             </h1>
@@ -152,7 +144,9 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       {/*services*/}
+
       <div className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -338,7 +332,13 @@ export default function Home() {
               </motion.div>
             ))}
           </div>
-
+          <div className="flex justify-center mb-8 pb-8">
+            <img
+              src="klokasiffror-logo.png"
+              alt="Kloka Siffror"
+              className="h-20 sm:h-24 lg:h-42 w-auto opacity-95"
+            />
+          </div>
           <div className="bg-gradient-to-br from-[#007533] to-[#003824] rounded-2xl p-8 sm:p-12 text-white text-center">
             <Clock className="w-12 h-12 mx-auto mb-4" />
             <h3 className="text-2xl sm:text-3xl mb-4">Öppettider</h3>
