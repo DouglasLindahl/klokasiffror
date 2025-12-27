@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
 
 import {
   Clock,
@@ -111,6 +112,8 @@ const cities = [
   {
     name: "KUNGSHAMN",
     address: "Stenhuggaregatan 1B",
+    person: "Scott Lindahl",
+    title: "Mentor",
     city: "456 32 Kungshamn",
     phone: "(212) 555-0100",
     email: "scott@klokasiffror.se",
@@ -119,6 +122,18 @@ const cities = [
   {
     name: "ÖREBRO",
     address: "Ekoxevägen 12",
+    person: "Per Aneskans",
+    title: "Redovisningsekonom",
+    city: "702 30 Örebro",
+    phone: "(213) 555-0200",
+    email: "per@klokasiffror.se",
+    img: "per_img.jpg",
+  },
+  {
+    name: "STOCKHOLM",
+    address: "Ekoxevägen 12",
+    person: "Ronja Winskog",
+    title: "Virtuell Assistent",
     city: "702 30 Örebro",
     phone: "(213) 555-0200",
     email: "per@klokasiffror.se",
@@ -155,9 +170,6 @@ const reasons = [
 export default function Home() {
   return (
     <>
-      {/*hero*/}
-      {/* 2ECC71 007533 003824 */}
-
       <div
         className="bg-gradient-to-br 
   from-[#007533] from-0% 
@@ -216,7 +228,7 @@ export default function Home() {
               return (
                 <motion.div
                   key={index}
-                  className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+                  className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col"
                   initial={{ opacity: 0, y: 40, scale: 0.95 }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
                   viewport={{ once: true, amount: 0.3 }}
@@ -227,7 +239,7 @@ export default function Home() {
                   }}
                 >
                   <div
-                    className={`bg-gradient-to-br ${service.color} p-8 text-white`}
+                    className={`bg-gradient-to-br ${service.color} p-8 text-white min-h-[380px] flex flex-col`}
                   >
                     <Icon className="w-16 h-16 mb-4" />
                     <h3 className="text-2xl sm:text-3xl mb-3">
@@ -257,7 +269,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl mb-4 text-gray-900">
-              Varfor Valja Oss
+              Varför Välja Oss
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Vi specialiserar oss på heltäckande redovisningstjänster som
@@ -322,7 +334,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             {cities.map((location, index) => (
               <motion.div
                 key={index}
@@ -345,12 +357,12 @@ export default function Home() {
 
                   <div className="space-y-3 text-gray-600">
                     <p className="text-sm">
-                      {location.address}
+                      {location.person}
                       <br />
-                      {location.city}
+                      {location.title}
                     </p>
 
-                    <div className="flex items-center gap-2">
+                    {/*                <div className="flex items-center gap-2">
                       <Phone className="w-4 h-4 text-[#007533]" />
                       <a
                         href={`tel:${location.phone}`}
@@ -358,7 +370,7 @@ export default function Home() {
                       >
                         {location.phone}
                       </a>
-                    </div>
+                    </div>*/}
 
                     <div className="flex items-center gap-2">
                       <Mail className="w-4 h-4 text-[#007533]" />
@@ -387,7 +399,7 @@ export default function Home() {
             <img
               src="klokasiffror-logo.png"
               alt="Kloka Siffror"
-              className="h-20 sm:h-24 lg:h-42 w-auto opacity-95"
+              className="h-20 sm:h-24 lg:h-58 w-auto opacity-95"
             />
           </div>
           <div className="bg-gradient-to-br from-[#007533] to-[#003824] rounded-2xl p-8 sm:p-12 text-white text-center">
