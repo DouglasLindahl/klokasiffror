@@ -137,7 +137,7 @@ const cities = [
     city: "456 32 Kungshamn",
     phone: "(212) 555-0100",
     email: "scott@klokasiffror.se",
-    img: "scott_img.jpg",
+    img: "scott_img2.png",
   },
 ];
 const reasons = [
