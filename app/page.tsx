@@ -124,10 +124,10 @@ const cities = [
     address: "Ekoxevägen 12",
     person: "Ronja Winskog",
     title: "Virtuell Assistent",
-    city: "702 30 Örebro",
-    phone: "(213) 555-0200",
+    city: "111 11 Stockholm",
+    phone: "072-245 73 33",
     email: "ronja@klokasiffror.se",
-    img: "per_img.jpg",
+    img: "ronja_img2.jpeg",
   },
   {
     name: "KUNGSHAMN",
@@ -406,7 +406,7 @@ export default function Home() {
             <Clock className="w-12 h-12 mx-auto mb-4" />
             <h3 className="text-2xl sm:text-3xl mb-4">Öppettider</h3>
             <div className="space-y-2 text-lg">
-              <p>Vardagar 08:00 – 18:00</p>
+              <p>Vardagar 08:00 – 16:00</p>
             </div>
             <br />
             <div className="space-y-2 text-lg">
