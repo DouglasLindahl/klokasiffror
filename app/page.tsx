@@ -110,20 +110,10 @@ const services = [
 
 const cities = [
   {
-    name: "KUNGSHAMN",
-    address: "Stenhuggaregatan 1B",
-    person: "Scott Lindahl",
-    title: "Mentor",
-    city: "456 32 Kungshamn",
-    phone: "(212) 555-0100",
-    email: "scott@klokasiffror.se",
-    img: "scott_img.jpg",
-  },
-  {
     name: "ÖREBRO",
     address: "Ekoxevägen 12",
     person: "Per Aneskans",
-    title: "Redovisningsekonom",
+    title: "Redovisningskonsult",
     city: "702 30 Örebro",
     phone: "(213) 555-0200",
     email: "per@klokasiffror.se",
@@ -138,6 +128,16 @@ const cities = [
     phone: "(213) 555-0200",
     email: "per@klokasiffror.se",
     img: "per_img.jpg",
+  },
+  {
+    name: "KUNGSHAMN",
+    address: "Stenhuggaregatan 1B",
+    person: "Scott Lindahl",
+    title: "Mentor",
+    city: "456 32 Kungshamn",
+    phone: "(212) 555-0100",
+    email: "scott@klokasiffror.se",
+    img: "scott_img.jpg",
   },
 ];
 const reasons = [
@@ -406,7 +406,7 @@ export default function Home() {
             <Clock className="w-12 h-12 mx-auto mb-4" />
             <h3 className="text-2xl sm:text-3xl mb-4">Öppettider</h3>
             <div className="space-y-2 text-lg">
-              <p>Måndag – Fredag: 08:00 – 18:00</p>
+              <p>Vardagar 08:00 – 18:00</p>
             </div>
             <br />
             <div className="space-y-2 text-lg">
