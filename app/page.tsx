@@ -124,7 +124,7 @@ const cities = [
     address: "Ekoxevägen 12",
     person: "Ronja Winskog",
     title: "Virtuell Assistent",
-    city: "111 11 Stockholm",
+    city: "116 20 Stockholm",
     phone: "072-245 73 33",
     email: "ronja@klokasiffror.se",
     img: "ronja_img2.jpeg",
