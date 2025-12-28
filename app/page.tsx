@@ -126,7 +126,7 @@ const cities = [
     title: "Virtuell Assistent",
     city: "702 30 Örebro",
     phone: "(213) 555-0200",
-    email: "per@klokasiffror.se",
+    email: "ronja@klokasiffror.se",
     img: "per_img.jpg",
   },
   {
@@ -149,7 +149,7 @@ const reasons = [
   },
   {
     icon: Users,
-    title: "Personligt & småföretagarvänligt",
+    title: "Personligt & vänligt",
     description:
       "Du får en nära samarbetspartner som förstår din vardag, dina utmaningar och dina mål – inga opersonliga standardlösningar.",
   },
