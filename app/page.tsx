@@ -362,16 +362,6 @@ export default function Home() {
                       {location.title}
                     </p>
 
-                    {/*                <div className="flex items-center gap-2">
-                      <Phone className="w-4 h-4 text-[#007533]" />
-                      <a
-                        href={`tel:${location.phone}`}
-                        className="text-sm hover:text-[#007533] transition-colors"
-                      >
-                        {location.phone}
-                      </a>
-                    </div>*/}
-
                     <div className="flex items-center gap-2">
                       <Mail className="w-4 h-4 text-[#007533]" />
                       <a
@@ -385,7 +375,7 @@ export default function Home() {
                 </div>
 
                 {/* RIGHT: Image */}
-                <div className="block w-20 h-20 sm:w-32 sm:h-32 flex-shrink-0">
+                <div className="block w-15 h-15 sm:w-32 sm:h-32 flex-shrink-0">
                   <img
                     src={location.img}
                     alt={location.name}
