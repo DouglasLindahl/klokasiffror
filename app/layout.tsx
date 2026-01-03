@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     siteName: "Kloka Siffror",
     images: [
       {
-        url: "https://klokasiffror.se/klokasiffror-logo.png",
+        url: "https://klokasiffror.se/klokasiffror-logo-mark.png",
         width: 1200,
         height: 630,
         alt: "Preview image",
