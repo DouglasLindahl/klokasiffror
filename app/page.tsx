@@ -642,7 +642,7 @@ export default function Home() {
               <br />
 
               <p>Kontakt via e-post</p>
-              <p>Telefon enligt överesnkommelse</p>
+              <p>Telefon enligt överenskommelse</p>
               <br />
               <p>Vi börjar alltid med att säkerställa rätt struktur</p>
             </div>
